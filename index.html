@@ -27,6 +27,20 @@
     @media(max-width:900px){.hero-grid,.about-grid{grid-template-columns:1fr;gap:50px}.hero{padding:80px 0}.visual{width:min(490px,100%);margin:auto}.project-info{padding:37px}.feature-grid{grid-template-columns:repeat(2,1fr)}.about-grid{gap:25px}}
     @media(max-width:680px){.container{width:min(var(--max),calc(100% - 34px))}.navbar{height:72px}.brand{font-size:15px}.brand-mark{width:36px;height:36px}.menu-button{display:grid;place-items:center}.nav-links{display:none;position:absolute;top:71px;left:0;right:0;background:#101a2d;padding:20px 18px 25px;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:0}.nav-links.open{display:flex}.nav-links a{padding:12px}.nav-cta{margin-top:7px;text-align:center}.hero{padding:70px 0 78px}h1{font-size:clamp(40px,11vw,56px);letter-spacing:-2.6px}.lead{font-size:16px}.visual{padding:10px}.screen{padding:18px}.float-tag{right:0;font-size:10px}.section{padding:75px 0}.feature-grid{grid-template-columns:1fr}.project-card{grid-template-columns:1fr}.project-info{padding:30px}.project-art{min-height:345px}.about-grid{gap:25px}.footer-wrap{align-items:flex-start;flex-direction:column}.footer-links{flex-wrap:wrap}.section h2{letter-spacing:-1.4px}}
     :focus-visible{outline:3px solid #63e0d7;outline-offset:3px}section[id]{scroll-margin-top:85px}
+
+    /* Brand visual refresh inspired by the social identity card */
+    .hero{background:radial-gradient(ellipse at 76% 48%,rgba(7,113,212,.19),transparent 43%),linear-gradient(130deg,#091127 0%,#0b1730 60%,#061a34 100%)}
+    .hero::after{content:"";position:absolute;inset:auto -10% 0 -10%;height:115px;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 50% 100%,rgba(16,198,243,.25),transparent 68%);border-bottom:1px solid rgba(39,220,245,.45);transform:rotate(-2deg)}
+    .visual::after{content:"";pointer-events:none;position:absolute;inset:10% 2%;z-index:-1;background:radial-gradient(circle,rgba(0,176,242,.17),transparent 67%);filter:blur(22px)}
+    .screen{border-color:rgba(27,203,245,.42);box-shadow:0 32px 90px rgba(0,0,0,.35),0 0 42px rgba(0,154,245,.09)}
+    .eyebrow{color:#5ce8f4}.hero .accent{background:linear-gradient(90deg,#6cf3ea,#2bacff);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .brand-showcase{display:flex;align-items:center;gap:13px;margin:26px 0 0;padding:13px 17px;width:fit-content;max-width:100%;border:1px solid rgba(72,210,241,.30);border-radius:14px;background:rgba(9,34,62,.63)}
+    .brand-showcase-icon{display:grid;place-items:center;width:40px;height:40px;flex:none;border-radius:12px;background:linear-gradient(145deg,#09549b,#09c1ec);font-size:23px}
+    .brand-showcase strong{display:block;font-size:14px;color:#edf7ff}.brand-showcase span{display:block;color:#9ebbd7;font-size:12px;margin-top:3px}
+    .tech-icons{display:flex;align-items:center;gap:10px;justify-content:center;margin-top:16px}
+    .tech-icons span{width:39px;height:39px;display:grid;place-items:center;border:1px solid rgba(57,207,240,.29);border-radius:12px;background:#102644;color:#74e6ff;font-size:19px;box-shadow:0 0 16px rgba(5,180,255,.06)}
+    .project-card{box-shadow:0 22px 85px rgba(0,0,0,.18)}.project-art{background:radial-gradient(circle at 55% 44%,rgba(34,174,239,.28),transparent 65%),linear-gradient(155deg,#092345,#101b34)}
+    @media(max-width:680px){.brand-showcase{margin-top:20px}.hero::after{height:60px}.tech-icons{margin-top:10px}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}.btn:hover{transform:none}}
   </style>
 </head>
@@ -42,13 +56,13 @@
   <h1>Tecnología que <span class="accent">simplifica</span> tu mundo.</h1>
   <p class="lead">En <strong style="color:#e7f2ff">Cerda-Abarca Digital</strong> creamos soluciones prácticas, accesibles y pensadas para las personas. Transformamos las necesidades cotidianas en experiencias digitales más simples.</p>
   <div class="actions"><a class="btn btn-primary" href="#proyectos">Conoce nuestros proyectos <span aria-hidden="true">↗</span></a><a class="btn btn-secondary" href="#nosotros">Nuestra visión <span aria-hidden="true">→</span></a></div>
-  <p class="hero-note">Una marca tecnológica independiente · Chile</p>
+  <div class="brand-showcase"><div class="brand-showcase-icon" aria-hidden="true">▣</div><div><strong>Creamos MiAuto Wallet</strong><span>Tu vehículo, siempre contigo</span></div></div><p class="hero-note">Una marca tecnológica independiente · Chile</p>
 </div><div class="visual" aria-label="Vista ilustrativa de MiAuto Wallet"><div class="screen">
   <div class="screen-header"><div class="window-dots"><i></i><i></i><i></i></div><span class="screen-caption">Soluciones hechas para ti</span></div>
   <div class="mock-hero"><div class="mini-brand"><span class="mini-icon">↗</span>MiAuto Wallet</div><h3>Tu vehículo,<br>todo en un lugar.</h3><p>Documentos importantes organizados para tenerlos a mano cuando los necesites.</p></div>
   <div class="vehicle"><svg viewBox="0 0 120 65" fill="none" aria-hidden="true"><path d="M12 40h9l15-21h47l15 21h9c5 0 7 3 7 8v7H7v-8c0-5 2-7 5-7Z" fill="#6cb6e8"/><path d="m42 24-12 17h65L81 24H42Z" fill="#b5e6fa"/><circle cx="29" cy="54" r="9" fill="#1a2941" stroke="#8aaac4" stroke-width="4"/><circle cx="91" cy="54" r="9" fill="#1a2941" stroke="#8aaac4" stroke-width="4"/></svg><div><strong>Mis documentos</strong><small>Permiso · Revisión · SOAP</small></div><span class="status">Organizados</span></div>
   <div class="screen-bottom"><div class="mini-stat"><b>Fácil de usar</b><span>Diseñado para todos</span></div><div class="mini-stat"><b>Siempre a mano</b><span>Desde tu celular</span></div></div>
-</div><div class="float-tag">✦ Ideas que se convierten en soluciones</div></div></div></section>
+</div><div class="float-tag">✦ Ideas que se convierten en soluciones</div><div class="tech-icons" aria-label="Vehículos, documentos, alertas y herramientas"><span title="Vehículos" aria-hidden="true">🚙</span><span title="Documentos" aria-hidden="true">▤</span><span title="Recordatorios" aria-hidden="true">♧</span><span title="Herramientas" aria-hidden="true">⚙</span></div></div></div></section>
 <section class="section section-alt" id="soluciones"><div class="container"><div class="section-head"><span class="eyebrow">Lo que nos mueve</span><h2>Creemos en lo digital, cuando mejora lo cotidiano.</h2><p class="section-desc">Queremos que la tecnología sea una ayuda real. Por eso diseñamos cada proyecto con tres principios fundamentales.</p></div><div class="feature-grid">
   <article class="feature"><div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="4"/><path d="m9 12 2 2 4-4"/></svg></div><h3>Simplicidad ante todo</h3><p>Herramientas claras e intuitivas, sin complicaciones innecesarias.</p></article>
   <article class="feature"><div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></div><h3>Acceso desde cualquier lugar</h3><p>Experiencias pensadas primero para el celular, adaptadas a tu día a día.</p></article>
