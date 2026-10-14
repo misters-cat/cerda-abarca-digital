@@ -75,7 +75,44 @@ h1,h2,h3{font-weight:600;letter-spacing:-.038em}h1 .accent,.hero .accent{backgro
 .design-switch a:hover{background:#005fbd}
 .tech-icons span{color:#0066cc;background:#fff;border-color:#dedee2;box-shadow:none}
 @media(max-width:680px){.nav-links{background:#fff;border-color:#dedee2}.nav-links a{color:#1d1d1f}}
-.design-options{display:flex;gap:8px;flex-wrap:wrap}.design-options a{display:inline-flex;justify-content:center;align-items:center;text-align:center}.design-options a[aria-current="page"]{outline:2px solid currentColor;outline-offset:2px}@media(max-width:680px){.design-options{width:100%;flex-direction:column}.design-options a{width:100%}}</style>
+.design-options{display:flex;gap:8px;flex-wrap:wrap}.design-options a{display:inline-flex;justify-content:center;align-items:center;text-align:center}.design-options a[aria-current="page"]{outline:2px solid currentColor;outline-offset:2px}@media(max-width:680px){.design-options{width:100%;flex-direction:column}.design-options a{width:100%}}
+/* Corporate v2: shared spacing, components, hierarchy and responsive system */
+:root{--max:1160px}
+body{font-size:16px;line-height:1.6}
+.container{width:min(var(--max),calc(100% - 44px))}
+.navbar{height:76px}.site-header{backdrop-filter:blur(18px)}
+.brand img{max-width:100%}
+.hero{padding:104px 0 100px}
+.hero-grid{gap:70px}
+h1{font-size:clamp(44px,5.35vw,76px);line-height:1.075;letter-spacing:-.048em}
+h2,.section h2{font-size:clamp(34px,3.8vw,52px);line-height:1.14;letter-spacing:-.04em}
+.lead{font-size:clamp(16px,1.6vw,19px);line-height:1.75}
+.eyebrow{font-size:11px;letter-spacing:.13em}
+.btn{min-height:49px;border-radius:999px;padding:13px 22px;font-size:14px;box-shadow:none}
+.btn:hover{transform:translateY(-1px)}
+.screen{border-radius:28px}.mock-hero{border-radius:21px}
+.vehicle,.mini-stat{border-radius:15px}
+.float-tag{border-radius:16px}
+.section{padding:100px 0}.section-head{max-width:760px}
+.feature-grid{gap:20px}.feature{border-radius:24px;padding:32px;min-height:235px}
+.feature h3{font-size:19px}.feature p{line-height:1.7}
+.project-card{border-radius:30px}.project-info{padding:55px}
+.project-info h3{font-size:clamp(32px,3.5vw,44px);letter-spacing:-.04em}
+.project-art{min-height:430px}
+.about-grid{gap:72px}.quote-box{border-radius:26px}
+.brand-showcase{border-radius:18px}
+.design-switch{border-radius:24px;padding:24px;margin-bottom:42px}
+.design-options a{border-radius:999px;min-height:43px;padding:11px 18px}
+.site-footer{padding:34px 0}
+@media(max-width:900px){.hero-grid{gap:36px}.project-info{padding:38px}.section{padding:80px 0}.project-art{min-height:360px}}
+@media(max-width:680px){.hero{padding:72px 0 75px}.hero-grid{gap:32px}h1{font-size:clamp(40px,11vw,59px)}.section{padding:72px 0}.feature{min-height:0;padding:27px}.project-info{padding:32px}.project-art{min-height:340px}.design-switch{padding:20px}.float-tag{position:relative;bottom:auto;right:auto;display:inline-block;margin-top:12px;transform:none}.navbar{height:72px}}
+
+/* Bright studio */
+:root{--bg:#fff;--panel:#f5f5f7;--muted:#5a5d67;--cyan:#0066cc}
+body{background:#fff}.hero{background:#fff}.section-alt{background:#f5f5f7}
+.feature{background:#fff}.screen{background:#f7f8fb}.project-card{background:#fff}
+.nav-cta,.btn-primary,.design-options a[aria-current="page"]{background:#0071e3;color:white!important}
+</style>
 </head>
 <body>
 <header class="site-header"><div class="container navbar">
