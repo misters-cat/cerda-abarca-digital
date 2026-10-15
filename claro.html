@@ -149,6 +149,19 @@ body{background:#fff}.hero{background:#fff}.section-alt{background:#f5f5f7}
 .contact-placeholder{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:25px}
 .contact-placeholder button{border:1px solid var(--line);border-radius:999px;padding:13px 22px;background:var(--panel);color:var(--muted);font-weight:700}
 @media(max-width:720px){.service-overview{grid-template-columns:1fr}.service-overview article{padding:26px}}
+
+/* Portada corporativa: servicios equilibrados, sin publicidad de un producto */
+.agency-screen{padding:28px}
+.agency-heading{font:800 clamp(23px,2.3vw,34px)/1.2 Manrope,sans-serif;letter-spacing:-.045em;margin:29px 0 20px}
+.agency-heading span{color:var(--cyan)}
+.agency-preview{display:grid;grid-template-columns:55px 1fr;gap:16px;align-items:center;margin:12px 0;padding:23px 19px;border:1px solid var(--line);border-radius:18px;background:var(--panel)}
+.agency-preview-icon{width:52px;height:52px;display:grid;place-items:center;border-radius:15px;background:var(--bg);border:1px solid var(--line);color:var(--cyan);font-size:30px}
+.agency-preview small{color:var(--cyan);font-size:10px;font-weight:800;letter-spacing:.12em}
+.agency-preview h3{font-size:20px;letter-spacing:-.03em;margin:5px 0}
+.agency-preview p{color:var(--muted);font-size:12px;line-height:1.6;margin:0}
+.agency-preview-design{border-color:var(--line)}
+.agency-bottom{display:flex;flex-wrap:wrap;gap:11px;justify-content:space-between;margin-top:18px;color:var(--muted);font-size:11px}
+@media(max-width:680px){.agency-screen{padding:20px}.agency-heading{font-size:24px}.agency-preview{grid-template-columns:44px 1fr;padding:17px 13px;gap:12px}.agency-preview-icon{width:42px;height:42px;font-size:25px}.agency-bottom{gap:7px;font-size:10px}}
 </style>
 </head>
 <body>
@@ -159,17 +172,26 @@ body{background:#fff}.hero{background:#fff}.section-alt{background:#f5f5f7}
 </div></header>
 <main>
 <section class="hero" id="inicio"><div class="container hero-grid"><div>
-  <span class="eyebrow">Ideas digitales con propósito</span>
-  <h1>Tecnología que <span class="accent">simplifica</span> tu mundo.</h1>
-  <p class="lead">En Cerda-Abarca Digital unimos tecnología y creatividad: desarrollamos soluciones web y creamos diseños para redes sociales que ayudan a emprendedores y empresas a comunicar mejor.</p>
-  <div class="actions"><a class="btn btn-primary" href="#soluciones">Conoce lo que hacemos <span aria-hidden="true">↗</span></a><a class="btn btn-secondary" href="#nosotros">Nuestra visión <span aria-hidden="true">→</span></a></div>
-  <div class="brand-showcase"><div class="brand-showcase-icon" aria-hidden="true">▣</div><div><strong>Desarrollo web y diseño digital</strong><span>Soluciones y creatividad para tu marca</span></div></div><p class="hero-note">Tecnología, diseño y colaboración especializada · Chile</p>
-</div><div class="visual" aria-label="Vista ilustrativa de MiAuto Wallet"><div class="screen">
-  <div class="screen-header"><div class="window-dots"><i></i><i></i><i></i></div><span class="screen-caption">Soluciones hechas para ti</span></div>
-  <div class="mock-hero"><div class="mini-brand"><span class="mini-icon">↗</span>MiAuto Wallet</div><h3>Tu vehículo,<br>todo en un lugar.</h3><p>Documentos importantes organizados para tenerlos a mano cuando los necesites.</p></div>
-  <div class="vehicle"><svg viewBox="0 0 120 65" fill="none" aria-hidden="true"><path d="M12 40h9l15-21h47l15 21h9c5 0 7 3 7 8v7H7v-8c0-5 2-7 5-7Z" fill="#6cb6e8"/><path d="m42 24-12 17h65L81 24H42Z" fill="#b5e6fa"/><circle cx="29" cy="54" r="9" fill="#1a2941" stroke="#8aaac4" stroke-width="4"/><circle cx="91" cy="54" r="9" fill="#1a2941" stroke="#8aaac4" stroke-width="4"/></svg><div><strong>Mis documentos</strong><small>Permiso · Revisión · SOAP</small></div><span class="status">Organizados</span></div>
-  <div class="screen-bottom"><div class="mini-stat"><b>Fácil de usar</b><span>Diseñado para todos</span></div><div class="mini-stat"><b>Siempre a mano</b><span>Desde tu celular</span></div></div>
-</div><div class="float-tag">✦ Ideas que se convierten en soluciones</div><div class="tech-icons" aria-label="Vehículos, documentos, alertas y herramientas"><span title="Vehículos" aria-hidden="true">🚙</span><span title="Documentos" aria-hidden="true">▤</span><span title="Recordatorios" aria-hidden="true">♧</span><span title="Herramientas" aria-hidden="true">⚙</span></div></div></div></section>
+<span class="eyebrow">Agencia de desarrollo y diseño digital</span>
+<h1>Ideas que se convierten en <span class="accent">soluciones digitales.</span></h1>
+<p class="lead">En Cerda-Abarca Digital combinamos desarrollo web y diseño gráfico para crear herramientas útiles y ayudar a las marcas a comunicar sus ideas. Trabajamos de manera independiente y colaboramos con especialistas en campañas publicitarias.</p>
+<div class="actions"><a class="btn btn-primary" href="#soluciones">Descubre nuestros servicios <span aria-hidden="true">↗</span></a><a class="btn btn-secondary" href="#nosotros">Conoce nuestra visión <span aria-hidden="true">→</span></a></div>
+<p class="hero-note">Desarrollo digital · Diseño para redes sociales · Chile</p>
+</div>
+<div class="visual" aria-label="Presentación de nuestras dos áreas: desarrollo web y diseño gráfico">
+<div class="screen agency-screen">
+<div class="screen-header"><div class="window-dots"><i></i><i></i><i></i></div><span class="screen-caption">Cerda-Abarca Digital · Estudio creativo</span></div>
+<div class="agency-heading">Tecnología <span>+</span> creatividad</div>
+<div class="agency-preview">
+<div class="agency-preview-icon" aria-hidden="true">⌘</div><div><small>ÁREA 01</small><h3>Desarrollo web</h3><p>Aplicaciones y soluciones digitales útiles, accesibles y pensadas para personas.</p></div>
+</div>
+<div class="agency-preview agency-preview-design">
+<div class="agency-preview-icon" aria-hidden="true">✳</div><div><small>ÁREA 02</small><h3>Diseño gráfico</h3><p>Imágenes, publicaciones, historias e identidad visual para marcas.</p></div>
+</div>
+<div class="agency-bottom"><span>01 · Construimos</span><span>02 · Diseñamos</span><span>03 · Colaboramos</span></div>
+</div>
+<div class="float-tag">✦ Dos especialidades, una visión</div>
+</div></div></section>
 <section class="section section-alt" id="soluciones"><div class="container"><div class="section-head"><span class="eyebrow">Qué hacemos</span><h2>Dos formas de impulsar tus ideas con tecnología y creatividad.</h2><p class="section-desc">Somos una marca de desarrollo digital con dos líneas de trabajo: creamos soluciones tecnológicas propias y diseñamos piezas visuales para ayudar a las marcas a comunicar mejor.</p></div>
 <div class="service-overview">
 <article><span class="service-number">01</span><h3>Desarrollo de soluciones digitales</h3><p>Diseñamos y desarrollamos herramientas web prácticas. Nuestro primer producto es MiAuto Wallet, una aplicación para organizar los documentos del vehículo.</p><a href="#proyectos">Conocer MiAuto Wallet ↗</a></article>
