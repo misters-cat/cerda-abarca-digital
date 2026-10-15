@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#132322">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <meta name="color-scheme" content="dark">
   <meta name="robots" content="index, follow">
@@ -19,7 +19,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
-    :root{color-scheme:light;--bg:#0b1122;--panel:#121b30;--white:#f5f8ff;--muted:#a9b6ce;--blue:#69a9ff;--cyan:#63e0d7;--line:rgba(185,207,255,.15);--max:1160px}
+    :root{color-scheme:dark;--bg:#0b1122;--panel:#121b30;--white:#f5f8ff;--muted:#a9b6ce;--blue:#69a9ff;--cyan:#63e0d7;--line:rgba(185,207,255,.15);--max:1160px}
     *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--white);font-family:'DM Sans',sans-serif;overflow-x:hidden}a{color:inherit;text-decoration:none}button{font:inherit}::selection{background:var(--cyan);color:#071322}
     .container{width:min(var(--max),calc(100% - 48px));margin-inline:auto}.site-header{position:sticky;z-index:10;top:0;background:rgba(11,17,34,.86);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.navbar{height:83px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:12px;font:800 18px/1.2 Manrope,sans-serif;letter-spacing:-.65px}.brand small{display:block;color:var(--muted);font:500 10px/1.5 'DM Sans',sans-serif;letter-spacing:2.3px;text-transform:uppercase;margin-top:3px}.brand-mark{width:41px;height:41px;flex:none;display:grid;place-items:center;border:1px solid rgba(99,224,215,.45);border-radius:12px;background:linear-gradient(145deg,rgba(105,169,255,.24),rgba(99,224,215,.09));color:#8ceae3;font:800 15px Manrope}.nav-links{display:flex;align-items:center;gap:31px;color:#c7d3e8;font-size:14px}.nav-links a:hover,.footer-links a:hover{color:var(--cyan)}.nav-cta{padding:11px 17px;border:1px solid var(--line);border-radius:11px;font-weight:700;color:white!important}.nav-cta:hover{border-color:var(--cyan)}.menu-button{display:none;background:none;border:1px solid var(--line);border-radius:9px;color:white;padding:9px;cursor:pointer}
     .hero{position:relative;isolation:isolate;padding:112px 0 122px;overflow:hidden}.hero:before{position:absolute;content:"";z-index:-1;inset:-15% -35% -10% 25%;background:radial-gradient(ellipse at 55% 35%,rgba(37,102,208,.20),transparent 60%)}.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}.eyebrow{display:inline-flex;gap:10px;align-items:center;color:var(--cyan);font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase}.eyebrow:before{content:"";width:21px;height:2px;background:var(--cyan)}h1,h2,h3,p{margin-top:0}h1,h2,h3{font-family:Manrope,sans-serif}h1{font-size:clamp(43px,5vw,69px);letter-spacing:-3.8px;line-height:1.11;margin:23px 0}h1 .accent{color:#7de4db}.lead{font-size:18px;line-height:1.85;color:var(--muted);max-width:570px}.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:32px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:11px;min-height:51px;padding:12px 21px;border-radius:12px;font-size:14px;font-weight:800;transition:.2s transform,.2s background}.btn:hover{transform:translateY(-3px)}.btn-primary{background:linear-gradient(105deg,#6bafff,#79e6d9);color:#071326;box-shadow:0 12px 30px rgba(66,167,228,.13)}.btn-secondary{border:1px solid #34405b;color:#e4edfd}.btn-secondary:hover{background:#182339}.hero-note{font-size:12px;color:#8c9fbd;margin-top:23px}.visual{position:relative;padding:15px}.visual:before{content:"";position:absolute;inset:7%;border:1px solid rgba(120,198,240,.15);transform:rotate(-8deg);border-radius:32px}.screen{position:relative;border:1px solid rgba(163,199,249,.23);border-radius:25px;padding:25px;background:linear-gradient(155deg,rgba(34,54,88,.95),rgba(15,26,47,.99));box-shadow:0 40px 90px rgba(0,0,0,.29)}.screen-header{display:flex;justify-content:space-between;align-items:center}.window-dots{display:flex;gap:7px}.window-dots i{width:8px;height:8px;background:#6b7c9d;border-radius:50%}.window-dots i:first-child{background:#80e5d7}.screen-caption{color:#a4b4cf;font-size:11px}.mock-hero{margin:37px 0 20px;background:linear-gradient(120deg,rgba(66,145,247,.18),rgba(93,231,220,.08));border:1px solid rgba(113,194,239,.18);border-radius:18px;padding:22px}.mini-brand{display:flex;gap:10px;align-items:center;font-size:12px;font-weight:800}.mini-icon{display:grid;place-items:center;width:30px;height:30px;border-radius:9px;background:#225b89;color:#b3edff}.mock-hero h3{font-size:25px;letter-spacing:-1px;margin:19px 0 9px}.mock-hero p{font-size:12px;color:#b0c3de;line-height:1.6;margin:0}.vehicle{display:flex;align-items:center;justify-content:space-between;padding:16px;border-radius:14px;background:#131f37;border:1px solid var(--line);gap:10px}.vehicle strong{font-size:13px}.vehicle small{display:block;color:#94a9c8;margin-top:5px;font-size:11px}.vehicle svg{width:78px;height:42px}.status{display:flex;align-items:center;gap:7px;color:#8de9c5;font-size:10px;white-space:nowrap}.status:before{content:"";width:7px;height:7px;border-radius:50%;background:#55d6a6}.screen-bottom{display:flex;gap:12px;justify-content:space-between;margin-top:15px}.mini-stat{flex:1;background:#111c32;border:1px solid var(--line);padding:13px;border-radius:12px}.mini-stat b{font-size:12px;display:block}.mini-stat span{font-size:10px;color:#9aacc9}.float-tag{position:absolute;right:-13px;bottom:38px;background:#e8fff8;color:#115b57;box-shadow:0 15px 30px rgba(0,0,0,.25);padding:13px 17px;border-radius:12px;font-size:12px;font-weight:800;transform:rotate(5deg)}
@@ -43,38 +43,24 @@
     @media(max-width:680px){.brand-showcase{margin-top:20px}.hero::after{height:60px}.tech-icons{margin-top:10px}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}.btn:hover{transform:none}}
   .design-switch{width:min(var(--max),calc(100% - 48px));margin:0 auto 32px;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:21px 24px;background:#142139;border:1px solid rgba(185,207,255,.15);border-radius:19px;color:#b7c7df;font-size:14px}.design-switch a{padding:12px 21px;border-radius:980px;background:#72dedb;color:#071526;font-weight:800;white-space:nowrap}.design-switch a:hover{background:#98f2e6}@media(max-width:680px){.design-switch{flex-direction:column;align-items:stretch}.design-switch a{text-align:center}}.design-options{display:flex;flex-wrap:wrap;gap:8px}.design-options a{display:inline-block;text-align:center}.design-options a[aria-current="page"]{outline:2px solid currentColor;outline-offset:2px}@media(max-width:640px){.design-options{width:100%;flex-direction:column}.design-options a{width:100%}}
-/* Modo claro: misma información y estructura del original */
-:root{color-scheme:light;--bg:#fff;--panel:#f5f5f7;--white:#1d1d1f;--muted:#62626a;--blue:#0071e3;--cyan:#0066cc;--line:#dedee2}
-body{background:#fff;color:#1d1d1f;font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
-.site-header{background:rgba(255,255,255,.96);border-color:#dedee2}
-.brand,.nav-links,.footer-links{color:#1d1d1f}.brand small{color:#62626a}.nav-links a:hover,.footer-links a:hover{color:#0066cc}
-.nav-cta{color:#fff!important;background:#0071e3;border:0;border-radius:980px}
-.menu-button{color:#1d1d1f;background:#f5f5f7}
-.hero{background:#fff}.hero:before,.hero::after,.visual::after{display:none}
-.eyebrow,.tag{color:#0066cc}.eyebrow:before{background:#0066cc}
-h1,h2,h3{font-weight:600;letter-spacing:-.038em}h1 .accent,.hero .accent{background:none;color:#0071e3;-webkit-text-fill-color:#0071e3}
-.lead,.section-desc,.feature p,.project-info p,.about-copy p{color:#62626a}
-.btn{border-radius:980px;box-shadow:none;transform:none}
-.btn-primary{background:#0071e3;color:#fff;box-shadow:none}.btn-primary:hover{background:#005fbd}
-.btn-secondary{background:#e8e8ed;border:0;color:#333336}.btn-secondary:hover{background:#dcdce1}
-.hero-note,.contact-note{color:#62626a}
-.screen,.mock-hero,.vehicle,.mini-stat,.feature,.project-card,.quote-box,.brand-showcase{background:#f5f5f7;border:1px solid #dedee2;box-shadow:none;color:#1d1d1f}
-.screen-caption,.vehicle small,.mini-stat span,.mock-hero p,.quote-box span,.brand-showcase span{color:#63636a}
-.mock-hero h3,.vehicle strong,.mini-stat b,.brand-showcase strong{color:#1d1d1f}
-.mini-icon,.feature-icon{background:#e2efff;color:#0066cc}.status{color:#167a53}
-.float-tag{background:#fff;color:#1d1d1f;box-shadow:none;border:1px solid #dedee2}
-.section-alt,.contact{background:#f5f5f7;border-color:#dedee2}
-.feature,.project-card,.quote-box{background:#fff}
-.project-info h3{color:#1d1d1f}.checks li{color:#3d3d42}.checks li:before{color:#0071e3}
-.project-art{background:#eef2f7}.big-app{box-shadow:none;transform:rotate(3deg)}
-.about-copy strong{color:#1d1d1f!important}
-.contact{background:#f5f5f7}
-.site-footer{background:#fff;border-color:#dedee2}.footer-wrap p,.footer-links{color:#62626a}
-.design-switch{background:#f5f5f7;color:#43434a;border:1px solid #dedee2}
-.design-switch a{background:#0071e3;color:#fff}
-.design-switch a:hover{background:#005fbd}
-.tech-icons span{color:#0066cc;background:#fff;border-color:#dedee2;box-shadow:none}
-@media(max-width:680px){.nav-links{background:#fff;border-color:#dedee2}.nav-links a{color:#1d1d1f}}
+:root{--bg:#132322;--panel:#0e1a19;--white:#fff;--muted:#b5c8c3;--blue:#3ddc91;--cyan:#3ddc91;--line:rgba(151,221,188,.22)}
+body{background:#132322;color:#fff;font-family:Inter,system-ui,sans-serif}
+.site-header{background:rgba(19,35,34,.96);border-color:#304642}.nav-links a:hover{color:#3ddc91}
+.hero{background:#132322}.hero:before,.hero::after,.visual::after{display:none}
+.eyebrow,.tag{color:#97ddbc}.eyebrow:before{background:#3ddc91}
+h1,h2,h3{font-weight:500}.hero .accent,h1 .accent{background:none;color:#97ddbc;-webkit-text-fill-color:#97ddbc}
+.btn{border-radius:56px;box-shadow:none}.btn-primary{background:#3ddc91;color:#132322;box-shadow:none}.btn-secondary{background:transparent;color:#fff;border-color:#fff}
+.screen,.mock-hero,.vehicle,.mini-stat,.feature,.project-card,.quote-box,.brand-showcase{background:#0e1a19;border-color:#304642;box-shadow:none}
+.mock-hero{background:#192e2b}.mini-icon,.feature-icon{background:#21443a;color:#3ddc91}.float-tag{background:#edf7f5;color:#132322;box-shadow:none}
+.section-alt{background:#0e1a19;border-color:#304642}.feature{background:#edf7f5;color:#132322;border:0;border-radius:20px}
+.feature h3,.feature p{color:#132322}.feature p{opacity:.76}
+.project-card{background:#edf7f5;color:#132322;border:0;border-radius:60px}.project-info h3,.project-info p,.checks li{color:#132322}.project-info .tag{color:#275b49}
+.project-art{background:#dcebe5}.big-app{box-shadow:none}.checks li:before{color:#248458}
+.quote-box{background:#edf7f5;color:#132322}.quote-box p{color:#132322}.quote-box span{color:#246b4c}
+.contact{background:#132322;border-color:#304642}.site-footer{background:#0e1a19;border-color:#304642}
+.brand-showcase strong{color:#fff}.tech-icons span{background:#0e1a19;border-color:#304642;color:#3ddc91}
+.design-switch{background:#0e1a19;color:#e2f1eb;border-color:#304642}.design-switch a{background:#3ddc91;color:#132322}
+@media(max-width:680px){.nav-links{background:#132322;border-color:#304642}}
 .design-options{display:flex;gap:8px;flex-wrap:wrap}.design-options a{display:inline-flex;justify-content:center;align-items:center;text-align:center}.design-options a[aria-current="page"]{outline:2px solid currentColor;outline-offset:2px}@media(max-width:680px){.design-options{width:100%;flex-direction:column}.design-options a{width:100%}}
 /* Corporate v2: shared spacing, components, hierarchy and responsive system */
 :root{--max:1160px}
@@ -107,11 +93,12 @@ h2,.section h2{font-size:clamp(34px,3.8vw,52px);line-height:1.14;letter-spacing:
 @media(max-width:900px){.hero-grid{gap:36px}.project-info{padding:38px}.section{padding:80px 0}.project-art{min-height:360px}}
 @media(max-width:680px){.hero{padding:72px 0 75px}.hero-grid{gap:32px}h1{font-size:clamp(40px,11vw,59px)}.section{padding:72px 0}.feature{min-height:0;padding:27px}.project-info{padding:32px}.project-art{min-height:340px}.design-switch{padding:20px}.float-tag{position:relative;bottom:auto;right:auto;display:inline-block;margin-top:12px;transform:none}.navbar{height:72px}}
 
-/* Bright studio */
-:root{--bg:#fff;--panel:#f5f5f7;--muted:#5a5d67;--cyan:#0066cc}
-body{background:#fff}.hero{background:#fff}.section-alt{background:#f5f5f7}
-.feature{background:#fff}.screen{background:#f7f8fb}.project-card{background:#fff}
-.nav-cta,.btn-primary,.design-options a[aria-current="page"]{background:#0071e3;color:white!important}
+/* Evergreen studio */
+:root{--bg:#132322;--panel:#0e1a19;--muted:#b8cbc5;--cyan:#3ddc91}
+body{background:#132322}.hero{background:#132322}.section-alt{background:#0e1a19}
+.feature{background:#edf7f5;color:#132322}.project-card{background:#edf7f5;color:#132322}
+.project-info p,.project-info h3,.checks li{color:#132322}
+.design-options a[aria-current="page"]{background:#3ddc91;color:#132322}
 </style>
 </head>
 <body>
@@ -142,7 +129,7 @@ body{background:#fff}.hero{background:#fff}.section-alt{background:#f5f5f7}
 <section class="section section-alt" id="nosotros"><div class="container about-grid"><div class="about-copy"><span class="eyebrow">Quiénes somos</span><h2>Un sello propio para nuevas ideas.</h2><p><strong style="color:#eff8ff">Cerda-Abarca Digital</strong> es una marca comercial chilena nacida con el objetivo de desarrollar proyectos digitales que resuelvan problemas reales.</p><p>MiAuto Wallet es nuestro punto de partida. Nuestra visión es seguir explorando nuevas herramientas, servicios y experiencias que aporten valor a personas y pequeños negocios.</p><a class="btn btn-secondary" href="#contacto">Conversemos sobre una idea →</a></div><div class="quote-box"><p>La innovación también está en hacer que las cosas simples funcionen mejor.</p><span>— Nuestra forma de entender la tecnología</span></div></div></section>
 <section class="section contact" id="contacto"><div class="container"><div class="section-head"><span class="eyebrow">Contacto</span><h2>Las buenas ideas empiezan con una conversación.</h2><p class="section-desc">¿Tienes una consulta sobre MiAuto Wallet o quieres conocer más sobre Cerda-Abarca Digital? Nos encantará conectar contigo.</p></div><div class="actions"><a class="btn btn-primary" href="https://autowalletpro.netlify.app/" target="_blank" rel="noopener noreferrer">Visitar MiAuto Wallet ↗</a><a class="btn btn-secondary" href="#inicio">Volver al inicio ↑</a></div><p class="contact-note">Canal de contacto corporativo en preparación. Mientras tanto, puedes conocer MiAuto Wallet desde el enlace anterior.</p></div></section>
 </main>
-<div class="design-switch"><span>Elige el estilo de Cerda-Abarca Digital</span><div class="design-options"><a href="/" aria-current="page">Modo claro ✓</a><a href="/clasico.html" >Modo oscuro ↗</a><a href="/verde.html" >Modo verde ↗</a></div></div><footer class="site-footer"><div class="container footer-wrap"><p>© <span id="year">2026</span> Cerda-Abarca Digital. Todos los derechos reservados.</p><div class="footer-links"><a href="#nosotros">Nosotros</a><a href="#proyectos">Proyectos</a><a href="https://autowalletpro.netlify.app/" target="_blank" rel="noopener noreferrer">MiAuto Wallet ↗</a></div></div></footer>
+<div class="design-switch"><span>Elige el estilo de Cerda-Abarca Digital</span><div class="design-options"><a href="/claro.html" >Modo claro ↗</a><a href="/clasico.html" >Modo oscuro ↗</a><a href="/" aria-current="page">Modo verde ✓</a></div></div><footer class="site-footer"><div class="container footer-wrap"><p>© <span id="year">2026</span> Cerda-Abarca Digital. Todos los derechos reservados.</p><div class="footer-links"><a href="#nosotros">Nosotros</a><a href="#proyectos">Proyectos</a><a href="https://autowalletpro.netlify.app/" target="_blank" rel="noopener noreferrer">MiAuto Wallet ↗</a></div></div></footer>
 <script>
   document.getElementById('year').textContent = String(new Date().getFullYear());
   const toggle=document.getElementById('menu-toggle'),nav=document.getElementById('nav-links');
