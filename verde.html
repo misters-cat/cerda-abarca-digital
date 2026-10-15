@@ -99,13 +99,35 @@ body{background:#132322}.hero{background:#132322}.section-alt{background:#0e1a19
 .feature{background:#edf7f5;color:#132322}.project-card{background:#edf7f5;color:#132322}
 .project-info p,.project-info h3,.checks li{color:#132322}
 .design-options a[aria-current="page"]{background:#3ddc91;color:#132322}
+
+/* Diseño digital: componentes compartidos que respetan cada tema */
+.design-services{position:relative}
+.design-services .section-head{max-width:790px}
+.design-intro{max-width:760px}
+.design-service-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:34px}
+.design-service{border:1px solid var(--line);border-radius:22px;background:var(--panel);padding:27px 25px;min-width:0}
+.design-service .service-symbol{display:grid;place-items:center;width:43px;height:43px;border:1px solid var(--line);border-radius:13px;background:var(--bg);color:var(--cyan);font-size:21px;font-weight:800;margin-bottom:18px}
+.design-service h3{font-size:17px;margin:0 0 10px;letter-spacing:-.025em}
+.design-service p{color:var(--muted);font-size:14px;line-height:1.7;margin:0}
+.design-process{margin-top:28px;border:1px solid var(--line);border-radius:24px;padding:27px 30px;background:var(--panel)}
+.design-process strong{display:block;margin-bottom:9px;font:800 17px Manrope,sans-serif}
+.design-process p{color:var(--muted);margin:0;line-height:1.75}
+.design-collab{margin-top:22px;display:flex;gap:15px;align-items:flex-start;padding:25px 28px;border-left:4px solid var(--cyan);border-radius:0 18px 18px 0;background:var(--panel)}
+.design-collab-mark{color:var(--cyan);font-size:26px;line-height:1}
+.design-collab strong{display:block;font:800 17px Manrope,sans-serif;margin-bottom:8px}
+.design-collab p{color:var(--muted);margin:0;line-height:1.75}
+.design-actions{margin-top:30px;display:flex;flex-wrap:wrap;align-items:center;gap:12px}
+.design-footnote{font-size:13px;color:var(--muted);margin-top:15px;line-height:1.7}
+@media(max-width:900px){.design-service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){.design-service-grid{grid-template-columns:1fr}.design-process,.design-collab{padding:22px}.design-service{padding:23px}}
+
 </style>
 </head>
 <body>
 <header class="site-header"><div class="container navbar">
   <a class="brand" href="#inicio" aria-label="Cerda-Abarca Digital, inicio"><img src="/assets/logo-cerda-abarca.svg" width="215" height="49" style="width:clamp(165px,24vw,215px);height:auto;display:block" alt="Cerda-Abarca Digital"></a>
   <button class="menu-button" id="menu-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir menú"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
-  <nav class="nav-links" id="nav-links" aria-label="Navegación principal"><a href="#nosotros">Nosotros</a><a href="#soluciones">Qué hacemos</a><a href="#proyectos">Proyectos</a><a class="nav-cta" href="#contacto">Hablemos ↗</a></nav>
+  <nav class="nav-links" id="nav-links" aria-label="Navegación principal"><a href="#nosotros">Nosotros</a><a href="#soluciones">Qué hacemos</a><a href="#diseno">Diseño gráfico</a><a href="#proyectos">Proyectos</a><a class="nav-cta" href="#contacto">Hablemos ↗</a></nav>
 </div></header>
 <main>
 <section class="hero" id="inicio"><div class="container hero-grid"><div>
@@ -125,9 +147,25 @@ body{background:#132322}.hero{background:#132322}.section-alt{background:#0e1a19
   <article class="feature"><div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></div><h3>Acceso desde cualquier lugar</h3><p>Experiencias pensadas primero para el celular, adaptadas a tu día a día.</p></article>
   <article class="feature"><div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg></div><h3>Confianza y evolución</h3><p>Desarrollamos soluciones útiles que puedan crecer junto con sus usuarios.</p></article>
 </div></div></section>
+
+<section class="section design-services" id="diseno"><div class="container">
+  <div class="section-head"><span class="eyebrow">Creatividad para redes sociales</span><h2>Diseño digital que ayuda a destacar tu marca.</h2><p class="section-desc design-intro">Creamos piezas gráficas para emprendedores, pequeños negocios y empresas. Diseños claros, atractivos y adaptados a la identidad de cada marca, especialmente para Instagram, Facebook y WhatsApp.</p></div>
+  <div class="design-service-grid">
+    <article class="design-service"><span class="service-symbol" aria-hidden="true">▦</span><h3>Publicaciones para redes</h3><p>Posts para Instagram y Facebook con mensajes y formatos adecuados a cada canal.</p></article>
+    <article class="design-service"><span class="service-symbol" aria-hidden="true">▯</span><h3>Historias verticales</h3><p>Diseños para historias de Instagram y estados de WhatsApp, pensados para verse bien en el celular.</p></article>
+    <article class="design-service"><span class="service-symbol" aria-hidden="true">✦</span><h3>Imágenes promocionales</h3><p>Gráficas para anunciar novedades, promociones, productos y servicios.</p></article>
+    <article class="design-service"><span class="service-symbol" aria-hidden="true">▤</span><h3>Carruseles</h3><p>Series de imágenes coordinadas para contar una historia, explicar un servicio o mostrar productos.</p></article>
+    <article class="design-service"><span class="service-symbol" aria-hidden="true">◇</span><h3>Identidad visual básica</h3><p>Propuestas de logotipos y elementos gráficos para dar coherencia a tu presencia digital.</p></article>
+  </div>
+  <div class="design-process"><strong>Tus imágenes, potenciadas con diseño</strong><p>Trabajamos principalmente con las fotografías y el material que nos entrega cada cliente. Podemos utilizar herramientas de inteligencia artificial como apoyo para mejorar la calidad de las imágenes, su presentación y el diseño final, con revisión humana.</p></div>
+  <aside class="design-collab"><span class="design-collab-mark" aria-hidden="true">↗</span><div><strong>Independientes, con colaboración especializada</strong><p>Cerda-Abarca Digital desarrolla sus servicios de diseño de manera independiente y trabaja en asociación con una agencia especializada en campañas publicitarias. Esta colaboración permite abordar necesidades de campañas más amplias, según el alcance acordado en cada proyecto. Somos entidades independientes; la colaboración no implica que se trate de una sola empresa.</p></div></aside>
+  <div class="design-actions"><a class="btn btn-primary" href="mailto:contacto.autowallet@gmail.com?subject=Consulta%20dise%C3%B1o%20digital%20-%20Cerda-Abarca%20Digital">Solicitar cotización por correo ↗</a><a class="btn btn-secondary" href="#contacto">Ver opciones de contacto →</a></div>
+  <p class="design-footnote">Cada propuesta se cotiza de forma personalizada. Portafolio de trabajos en preparación.</p>
+</div></section>
+
 <section class="section" id="proyectos"><div class="container"><div class="section-head"><span class="eyebrow">Nuestro primer proyecto</span><h2>Una idea simple. Una solución real.</h2><p class="section-desc">Comenzamos con una necesidad muy común: tener los documentos del vehículo ordenados y disponibles cuando se necesitan.</p></div><article class="project-card"><div class="project-info"><span class="tag">Proyecto en desarrollo · Beta</span><h3>MiAuto Wallet</h3><p>Una aplicación web para organizar los documentos importantes de tu vehículo desde el celular. Sin buscar entre papeles, fotos o conversaciones.</p><ul class="checks"><li>Permiso de Circulación</li><li>Revisión Técnica</li><li>Seguro Obligatorio (SOAP)</li><li>Información y fechas de vencimiento</li></ul><a class="btn btn-primary" href="https://autowalletpro.netlify.app/" target="_blank" rel="noopener noreferrer">Conocer MiAuto Wallet ↗</a></div><div class="project-art" aria-label="Ilustración conceptual de la interfaz de MiAuto Wallet"><div class="big-app"><div class="top"><span>↗</span> MiAuto Wallet</div><div class="auto"><svg viewBox="0 0 220 110" aria-hidden="true"><path d="M34 72 58 38c5-8 14-12 26-12h58c11 0 19 5 26 13l22 33h9c7 0 12 5 12 11v13H10V84c0-8 6-12 15-12Z" fill="#388bb9"/><path d="m68 40-19 33h126l-21-33c-3-5-7-7-14-7H82c-7 0-11 3-14 7Z" fill="#a8d7ef"/><circle cx="55" cy="94" r="14" fill="#20334d" stroke="#93b9d2" stroke-width="5"/><circle cx="167" cy="94" r="14" fill="#20334d" stroke="#93b9d2" stroke-width="5"/></svg></div><div class="doc">Permiso de Circulación <b>✓</b></div><div class="doc">Revisión Técnica <b>✓</b></div><div class="doc">SOAP <b>✓</b></div></div></div></article></div></section>
 <section class="section section-alt" id="nosotros"><div class="container about-grid"><div class="about-copy"><span class="eyebrow">Quiénes somos</span><h2>Un sello propio para nuevas ideas.</h2><p><strong style="color:#eff8ff">Cerda-Abarca Digital</strong> es una marca comercial chilena nacida con el objetivo de desarrollar proyectos digitales que resuelvan problemas reales.</p><p>MiAuto Wallet es nuestro punto de partida. Nuestra visión es seguir explorando nuevas herramientas, servicios y experiencias que aporten valor a personas y pequeños negocios.</p><a class="btn btn-secondary" href="#contacto">Conversemos sobre una idea →</a></div><div class="quote-box"><p>La innovación también está en hacer que las cosas simples funcionen mejor.</p><span>— Nuestra forma de entender la tecnología</span></div></div></section>
-<section class="section contact" id="contacto"><div class="container"><div class="section-head"><span class="eyebrow">Contacto</span><h2>Las buenas ideas empiezan con una conversación.</h2><p class="section-desc">¿Tienes una consulta sobre MiAuto Wallet o quieres conocer más sobre Cerda-Abarca Digital? Nos encantará conectar contigo.</p></div><div class="actions"><a class="btn btn-primary" href="https://autowalletpro.netlify.app/" target="_blank" rel="noopener noreferrer">Visitar MiAuto Wallet ↗</a><a class="btn btn-secondary" href="#inicio">Volver al inicio ↑</a></div><p class="contact-note">Canal de contacto corporativo en preparación. Mientras tanto, puedes conocer MiAuto Wallet desde el enlace anterior.</p></div></section>
+<section class="section contact" id="contacto"><div class="container"><div class="section-head"><span class="eyebrow">Contacto</span><h2>Las buenas ideas empiezan con una conversación.</h2><p class="section-desc">¿Tienes una consulta sobre MiAuto Wallet, necesitas una cotización de diseño digital o quieres conocer más sobre Cerda-Abarca Digital? Escríbenos.</p></div><div class="actions"><a class="btn btn-primary" href="https://autowalletpro.netlify.app/" target="_blank" rel="noopener noreferrer">Visitar MiAuto Wallet ↗</a><a class="btn btn-secondary" href="#inicio">Volver al inicio ↑</a></div><p class="contact-note">Para cotizaciones de diseño, escribe a contacto.autowallet@gmail.com (correo temporal). También atenderemos por WhatsApp cuando esté habilitado el número corporativo.</p></div></section>
 </main>
 <div class="design-switch"><span>Elige el estilo de Cerda-Abarca Digital</span><div class="design-options"><a href="/" >Modo claro ↗</a><a href="/clasico.html" >Modo oscuro ↗</a><a href="/verde.html" aria-current="page">Modo verde ✓</a></div></div><footer class="site-footer"><div class="container footer-wrap"><p>© <span id="year">2026</span> Cerda-Abarca Digital. Todos los derechos reservados.</p><div class="footer-links"><a href="#nosotros">Nosotros</a><a href="#proyectos">Proyectos</a><a href="https://autowalletpro.netlify.app/" target="_blank" rel="noopener noreferrer">MiAuto Wallet ↗</a></div></div></footer>
 <script>
